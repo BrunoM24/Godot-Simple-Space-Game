@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/background.png" type="Texture" id=1]
+[ext_resource path="res://src/agents/Spaceship.tscn" type="PackedScene" id=2]
 
 [node name="Game" type="Node2D"]
 
@@ -21,3 +22,8 @@ stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Agents" type="Node2D" parent="."]
+
+[node name="Spaceship" parent="Agents" instance=ExtResource( 2 )]
+position = Vector2( 488.34, 308.782 )
