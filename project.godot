@@ -26,6 +26,11 @@ window/size/height=1080
 window/size/test_width=960
 window/size/test_height=540
 
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="spaceships"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
