@@ -19,6 +19,13 @@ config/name="Simple_Space_Game"
 run/main_scene="res://src/Game.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/test_width=960
+window/size/test_height=540
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
