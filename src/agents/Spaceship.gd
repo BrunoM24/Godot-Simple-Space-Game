@@ -12,6 +12,10 @@ var _target_position := Vector2.ZERO
 var _velocity := Vector2.ZERO
 
 
+func _ready() -> void:
+	set_physics_process(false)
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("left_click"):
 		_target_position = get_global_mouse_position()
