@@ -10,6 +10,7 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2( 0.9, 0.9 )
 
 [node name="Background" type="TextureRect" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 anchor_right = 1.0
@@ -18,7 +19,6 @@ margin_right = 1920.0
 margin_bottom = 1080.0
 mouse_filter = 2
 texture = ExtResource( 1 )
-expand = true
 stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
