@@ -5,7 +5,7 @@ onready var animation_player : AnimationPlayer = $AnimationPlayer
 
 
 func _ready() -> void:
-	visible = true
+	visible = false
 
 
 func _unhandled_input(event: InputEvent) -> void:
