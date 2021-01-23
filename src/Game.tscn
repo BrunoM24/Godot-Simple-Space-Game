@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/background.png" type="Texture" id=1]
 [ext_resource path="res://src/agents/Spaceship.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/UI/MouseTarget.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/UI/debug/DebugPanel.tscn" type="PackedScene" id=4]
 
 [node name="Game" type="Node2D"]
 
@@ -26,6 +27,16 @@ __meta__ = {
 }
 
 [node name="MouseTarget" parent="CanvasLayer" instance=ExtResource( 3 )]
+
+[node name="DebugPanel" parent="CanvasLayer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 422.0
+margin_bottom = 180.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+reference_path = NodePath("../../Agents/Spaceship")
+properties = PoolStringArray( "position", "_target_position", "_velocity" )
 
 [node name="Agents" type="Node2D" parent="."]
 
