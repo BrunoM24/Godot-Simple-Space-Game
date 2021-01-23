@@ -20,8 +20,8 @@ _global_script_classes=[ {
 "path": "res://src/state_machine/StateMachine.gd"
 } ]
 _global_script_class_icons={
-"State": "",
-"StateMachine": ""
+"State": "res://assets/engine/state.svg",
+"StateMachine": "res://assets/engine/state_machine.svg"
 }
 
 [application]
