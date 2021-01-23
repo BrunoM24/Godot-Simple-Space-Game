@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
+[ext_resource path="res://assets/debug_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/UI/debug/DebugPanel.gd" type="Script" id=2]
 
 [node name="DebugPanel" type="PanelContainer"]
@@ -7,6 +8,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -1630.0
 margin_bottom = -998.0
+mouse_filter = 2
+theme = ExtResource( 1 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -17,6 +20,7 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 283.0
 margin_bottom = 105.0
+mouse_filter = 2
 
 [node name="ReferenceName" type="Label" parent="VBoxContainer"]
 margin_right = 276.0
@@ -30,6 +34,7 @@ valign = 1
 margin_top = 58.0
 margin_right = 276.0
 margin_bottom = 98.0
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/margin_right = 20
@@ -42,5 +47,6 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 256.0
 margin_bottom = 20.0
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
