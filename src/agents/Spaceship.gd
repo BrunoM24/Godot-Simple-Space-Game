@@ -1,8 +1,6 @@
 extends KinematicBody2D
 
 
-onready var sprite : Sprite = $Sprite
-
 const TARGET_TRESHOULD := 8.0
 
 export var max_speed := 500.0
@@ -42,4 +40,4 @@ func _physics_process(delta: float) -> void:
 	
 	_velocity = move_and_slide(_velocity)
 	
-	sprite.rotation = _velocity.angle()
+	rotation = _velocity.angle()
