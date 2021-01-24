@@ -3,7 +3,7 @@ class_name StateMachine, "res://assets/engine/state_machine.svg"
 
 """
 Generic State Machine. Intializes states and delegates engine callbacks
-(_physics_process, _unhandle_input) to the active state.
+(_physics_process, _unhandled_input) to the active state.
 """
 
 
@@ -19,7 +19,7 @@ func _ready() -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	state.unhandle_input(event)
+	state.unhandled_input(event)
 
 
 func _physics_process(delta: float) -> void:
