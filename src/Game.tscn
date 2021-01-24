@@ -36,7 +36,7 @@ margin_bottom = 180.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 reference_path = NodePath("../../Agents/Spaceship")
-properties = PoolStringArray( "position", "_target_position", "_velocity" )
+properties = PoolStringArray( "position", "_target_position", "_velocity", "rotation_degrees" )
 
 [node name="Agents" type="Node2D" parent="."]
 
