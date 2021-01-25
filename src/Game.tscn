@@ -23,22 +23,41 @@ mouse_filter = 2
 texture = ExtResource( 1 )
 stretch_mode = 2
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="MouseTarget" parent="CanvasLayer" instance=ExtResource( 3 )]
 
-[node name="DebugPanel" parent="CanvasLayer" instance=ExtResource( 4 )]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+margin_right = 387.0
+margin_bottom = 298.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DebugPanel" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 422.0
-margin_bottom = 180.0
-size_flags_horizontal = 4
+margin_right = 387.0
+margin_bottom = 160.0
 size_flags_vertical = 4
-reference_path = NodePath("../../Agents/Spaceship")
-properties = PoolStringArray( "position", "_target_position", "_velocity", "rotation_degrees" )
+reference_path = NodePath("../../../Agents/Spaceship/StateMachine/Move")
+properties = PoolStringArray( "_target_position", "_velocity" )
+
+[node name="DebugPanel2" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 164.0
+margin_right = 387.0
+margin_bottom = 298.0
+size_flags_vertical = 4
+reference_path = NodePath("../../../Agents/Spaceship/StateMachine")
+properties = PoolStringArray( "_state_name" )
 
 [node name="Agents" type="Node2D" parent="."]
 
 [node name="Spaceship" parent="Agents" instance=ExtResource( 2 )]
 position = Vector2( 488.34, 308.782 )
+
+[editable path="Agents/Spaceship"]
