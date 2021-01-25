@@ -13,6 +13,10 @@ onready var state: State = get_node(initial_state) setget set_state
 onready var _state_name: String = state.name
 
 
+func _init() -> void:
+	add_to_group("state_machine")
+
+
 func _ready() -> void:
 	yield(owner, "ready")
 	state.enter()
