@@ -59,5 +59,3 @@ properties = PoolStringArray( "_state_name" )
 
 [node name="Spaceship" parent="Agents" instance=ExtResource( 2 )]
 position = Vector2( 488.34, 308.782 )
-
-[editable path="Agents/Spaceship"]
