@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/ships/playerShip1_blue.png" type="Texture" id=1]
 [ext_resource path="res://src/agents/Spaceship.gd" type="Script" id=2]
 [ext_resource path="res://src/state_machine/StateMachine.gd" type="Script" id=3]
 [ext_resource path="res://src/agents/states/Move.gd" type="Script" id=4]
 [ext_resource path="res://src/agents/states/Idle.gd" type="Script" id=5]
+[ext_resource path="res://assets/UI/target.png" type="Texture" id=6]
+[ext_resource path="res://assets/UI/return.png" type="Texture" id=7]
+[ext_resource path="res://assets/UI/pause.png" type="Texture" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 38.0
@@ -30,3 +33,45 @@ script = ExtResource( 4 )
 
 [node name="Idle" type="Node" parent="StateMachine"]
 script = ExtResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -216.0
+margin_top = -170.0
+margin_right = 216.0
+custom_constants/margin_right = 32
+custom_constants/margin_top = 32
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 400.0
+margin_bottom = 138.0
+custom_constants/separation = 16
+
+[node name="StopButton" type="Button" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+margin_right = 112.0
+margin_bottom = 106.0
+icon = ExtResource( 8 )
+
+[node name="TargetButton" type="Button" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+margin_left = 128.0
+margin_right = 240.0
+margin_bottom = 106.0
+icon = ExtResource( 6 )
+
+[node name="PatrolButton" type="Button" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+margin_left = 256.0
+margin_right = 368.0
+margin_bottom = 106.0
+icon = ExtResource( 7 )
