@@ -30,6 +30,10 @@ config/name="Simple_Space_Game"
 run/main_scene="res://src/Game.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Actions="*res://src/UI/actions/Actions.gd"
+
 [display]
 
 window/size/width=1920
