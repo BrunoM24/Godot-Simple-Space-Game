@@ -18,6 +18,7 @@ func _init() -> void:
 
 
 func _ready() -> void:
+	Actions.connect("action", self, "_action_called")
 	yield(owner, "ready")
 	state.enter()
 
@@ -44,3 +45,7 @@ func transition_to(state_path: String, msg: Dictionary = {}) -> void:
 func set_state(value: State) -> void:
 	state = value
 	_state_name = state.name
+
+
+func _action_called(action: String) -> void:
+	transition_to(action)
