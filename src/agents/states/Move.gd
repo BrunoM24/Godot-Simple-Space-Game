@@ -22,6 +22,7 @@ func physics_process(delta: float) -> void:
 	
 	if distance_to_target < TARGET_TRESHOULD:
 		_state_machine.transition_to("Idle")
+		return
 	
 	var desired_velocity : Vector2 = max_speed * (_target_position - owner.global_position).normalized()
 	
@@ -40,3 +41,8 @@ func physics_process(delta: float) -> void:
 func enter(msg: Dictionary = {}) -> void:
 	if msg.has("target_position"):
 		_target_position = msg.target_position
+
+
+func exit() -> void:
+	_target_position = owner.global_position
+	_velocity = Vector2.ZERO
