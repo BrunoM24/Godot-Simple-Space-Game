@@ -68,7 +68,7 @@ custom_constants/separation = 16
 
 [node name="StopButton" parent="CanvasLayer/MarginContainer/HBoxContainer" instance=ExtResource( 6 )]
 icon = ExtResource( 8 )
-action = "Idle"
+action = "Hold"
 
 [node name="MoveButton" parent="CanvasLayer/MarginContainer/HBoxContainer" instance=ExtResource( 6 )]
 margin_left = 128.0
