@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/ships/playerShip1_blue.png" type="Texture" id=1]
 [ext_resource path="res://src/agents/Spaceship.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/UI/return.png" type="Texture" id=7]
 [ext_resource path="res://assets/UI/pause.png" type="Texture" id=8]
 [ext_resource path="res://src/agents/states/Hold.gd" type="Script" id=9]
+[ext_resource path="res://src/agents/states/Patrol.gd" type="Script" id=10]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 38.0
@@ -40,6 +41,9 @@ script = ExtResource( 5 )
 
 [node name="Hold" type="Node" parent="StateMachine"]
 script = ExtResource( 9 )
+
+[node name="Patrol" type="Node" parent="StateMachine"]
+script = ExtResource( 10 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
