@@ -30,6 +30,9 @@ initial_state = NodePath("Idle")
 
 [node name="Move" type="Node" parent="StateMachine"]
 script = ExtResource( 4 )
+max_speed = 700.0
+mass = 10.0
+slow_radius = 400.0
 
 [node name="Idle" type="Node" parent="StateMachine"]
 script = ExtResource( 5 )
