@@ -41,6 +41,8 @@ func physics_process(delta: float) -> void:
 func enter(msg: Dictionary = {}) -> void:
 	if msg.has("target_position"):
 		_target_position = msg.target_position
+	else:
+		_target_position = owner.global_position
 
 
 func exit() -> void:
