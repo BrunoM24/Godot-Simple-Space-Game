@@ -83,4 +83,4 @@ action = "Move"
 margin_left = 256.0
 margin_right = 368.0
 icon = ExtResource( 7 )
-action = "patrol"
+action = "Patrol"
