@@ -15,6 +15,7 @@ var _velocity := Vector2.ZERO
 
 func unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("left_click"):
+		_start_position = _target_position
 		_target_position = event.position
 
 
