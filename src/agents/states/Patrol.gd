@@ -20,6 +20,9 @@ func unhandled_input(event: InputEvent) -> void:
 
 
 func physics_process(delta: float) -> void:
+	if _target_position == _start_position:
+		return
+	
 	var distance_to_target : float = owner.global_position.distance_to(_target_position)
 	
 	if distance_to_target < TARGET_TRESHOULD:
