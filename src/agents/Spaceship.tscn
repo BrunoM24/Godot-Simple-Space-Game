@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/ships/playerShip1_blue.png" type="Texture" id=1]
 [ext_resource path="res://src/agents/Spaceship.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://src/agents/states/Patrol.gd" type="Script" id=10]
 [ext_resource path="res://src/agents/states/Hold.gd" type="Script" id=11]
 [ext_resource path="res://assets/UI/larger.png" type="Texture" id=12]
+[ext_resource path="res://assets/UI/flag.png" type="Texture" id=13]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 38.0
@@ -82,6 +83,7 @@ action = "Hold"
 [node name="MoveButton" parent="CanvasLayer/MarginContainer/HBoxContainer" instance=ExtResource( 6 )]
 margin_left = 128.0
 margin_right = 240.0
+icon = ExtResource( 13 )
 action = "Move"
 
 [node name="PatrolButton" parent="CanvasLayer/MarginContainer/HBoxContainer" instance=ExtResource( 6 )]
