@@ -46,22 +46,12 @@ size_flags_vertical = 4
 reference_path = NodePath("../../../Agents/Spaceship/StateMachine/Patrol")
 properties = PoolStringArray( "_target_position", "_velocity" )
 
-[node name="DebugPanel3" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
+[node name="DebugPanel2" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 164.0
 margin_right = 387.0
-margin_bottom = 324.0
-size_flags_vertical = 4
-reference_path = NodePath("../../../Agents/Spaceship/StateMachine/Move")
-properties = PoolStringArray( "_target_position", "_velocity" )
-
-[node name="DebugPanel2" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 328.0
-margin_right = 387.0
-margin_bottom = 462.0
+margin_bottom = 298.0
 size_flags_vertical = 4
 reference_path = NodePath("../../../Agents/Spaceship/StateMachine")
 properties = PoolStringArray( "_state_name" )
