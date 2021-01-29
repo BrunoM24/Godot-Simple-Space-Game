@@ -37,24 +37,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DebugPanel" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 387.0
-margin_bottom = 160.0
-size_flags_vertical = 4
-reference_path = NodePath("../../../Agents/Spaceship/StateMachine/Patrol")
-properties = PoolStringArray( "_target_position", "_velocity" )
-
 [node name="DebugPanel2" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 164.0
 margin_right = 387.0
-margin_bottom = 298.0
+margin_bottom = 134.0
 size_flags_vertical = 4
 reference_path = NodePath("../../../Agents/Spaceship/StateMachine")
 properties = PoolStringArray( "_state_name" )
+
+[node name="DebugPanel" parent="CanvasLayer/VBoxContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 138.0
+margin_right = 387.0
+margin_bottom = 298.0
+size_flags_vertical = 4
+reference_path = NodePath("../../../Agents/Spaceship/StateMachine/Patrol")
+properties = PoolStringArray( "_target_position", "_velocity" )
 
 [node name="Agents" type="Node2D" parent="."]
 
