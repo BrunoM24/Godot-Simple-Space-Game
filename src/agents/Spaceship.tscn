@@ -72,7 +72,7 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
 margin_left = 32.0
 margin_top = 32.0
-margin_right = 528.0
+margin_right = 656.0
 margin_bottom = 138.0
 custom_constants/separation = 16
 
@@ -97,3 +97,8 @@ margin_left = 384.0
 margin_right = 496.0
 icon = ExtResource( 12 )
 action = "Avoid"
+
+[node name="FollowButton" parent="CanvasLayer/MarginContainer/HBoxContainer" instance=ExtResource( 6 )]
+margin_left = 512.0
+margin_right = 624.0
+action = "Follow"
