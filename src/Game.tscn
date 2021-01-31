@@ -61,9 +61,4 @@ properties = PoolStringArray( "_target_position", "_velocity" )
 [node name="Spaceship" parent="Agents" instance=ExtResource( 2 )]
 position = Vector2( 488.34, 308.782 )
 
-[node name="Move" parent="Agents/Spaceship/StateMachine" index="0"]
-max_speed = 500.0
-mass = 2.0
-slow_radius = 200.0
-
 [editable path="Agents/Spaceship"]
