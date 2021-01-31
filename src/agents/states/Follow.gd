@@ -3,8 +3,6 @@ extends State
 
 const TARGET_TRESHOULD := 4.0
 
-export var max_speed := 500.0
-export var mass := 2.0
 export var slow_radius := 200.0
 
 var _target_position := Vector2.ZERO
@@ -22,7 +20,7 @@ func physics_process(delta: float) -> void:
 	if distance_to_target < TARGET_TRESHOULD:
 		return
 	
-	_velocity = _calculate_velocity(_velocity, owner.global_position, _target_position, max_speed, mass)
+	_velocity = _calculate_velocity(_velocity, owner.global_position, _target_position, owner.max_speed, owner.mass)
 	
 	_velocity = owner.move_and_slide(_velocity)
 	
